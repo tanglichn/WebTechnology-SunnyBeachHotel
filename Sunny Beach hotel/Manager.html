@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manager sign in</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body{
+        background-color: #33A8FF;
+      }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Sunny Beach hotel</a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <form name="manager" action="manager.php" class="form-signin" target="submitFrame" method="post">
+                <h2 class="form-signin-heading">Sign in your Manager Account</h2>
+                <label for="inputManager ID">Manager ID</label>
+                <input type="manager_id" name="manager_id" id="inputManager ID" class="form-control" placeholder="please input your Manager ID" required autofocus><br>
+                <label for="inputPassword">Password</label>
+                <input type="password" name="manager_password" id="inputPassword" class="form-control" placeholder="please input your Password" required>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me" checked="checked"> Remember Password
+                    </label>
+                </div>
+                <button type="submit" name="submit" class="btn btn-primary" id="btn-login">sign in</button>             
+            </form>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

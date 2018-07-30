@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>make reservation</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+  $( function() {
+    $("#datepicker1, #datepicker2").datepicker({dateFormat: 'yy-mm-dd'});
+  } );
+  </script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Sunny Beach hotel </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="Rooms.html">return to search available room</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <form action="make_reservation.php" class="form-signin" target="submitFrame" method="post">
+                <h2 class="form-signin-heading">Make Reservation</h2>
+                <label for="input romm_id">Room ID</label>
+                <input type="room_id" name="room_id" id="room_id" class="form-control" placeholder="please input the Room ID" required autofocus><br>
+                <label for="input guest_id">Guest ID</label>
+                <input type="guest_id" name="guest_id" id="guest_id" class="form-control" placeholder="please input your Guest ID" required maxLength="16"><br>
+                <label for="input guest_name">Guest Name</label>
+                <input type="guest_name" name="guest_name" id="guest_name" class="form-control" placeholder="please input your Guest Name" required autofocus><br>
+                <label for="input check_in_date">Check in date</label>
+                <input type="check_in_date" name="check_in_date" id="datepicker1" placeholder="select date" class="form-control" required autofocus><br>
+                <label for="input check_out_date">Check out date</label>
+                <input type="check_out_date" name="check_out_date" id="datepicker2" placeholder="select date" class="form-control" required autofocus><br>
+                <button type="submit" name="submit" class="btn btn-primary" id="btn-reg">Make Reservation</button>
+                <a href="Guest sign in.html" class="btn btn-default" id="btn-reg">Return sign in</a>
+            </form>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+      <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

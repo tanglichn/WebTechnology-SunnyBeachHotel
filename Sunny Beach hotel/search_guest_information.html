@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>search guest information</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Sunny Beach hotel</a>
+        </div> 
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="view information.html">return to view information</a></li>
+            </ul>
+        </div>         
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <form name="Guest sign in" action="search_guest_information.php" class="form-signin" target="submitFrame" method="post">
+                <h2 class="form-signin-heading">search guest information</h2>
+                
+                <input type="guest_name" name="guest_name" id="inputGuest name" class="form-control" placeholder="please input the Guest Name" required autofocus><br>
+                <button type="submit" name="submit" class="btn btn-primary" id="btn-login">Search</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

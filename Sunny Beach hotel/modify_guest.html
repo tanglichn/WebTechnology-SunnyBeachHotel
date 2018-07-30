@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modify guest information</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Sunny Beach hotel</a>
+        </div>       
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+            <form name="modify_guest" action="modify_guest.php" class="form-signin" target="submitFrame" method="post">
+                <h2 class="form-signin-heading">Modify guest information</h2>
+                <label for="inputGuest ID">Original Guest ID (you cannot change your Guest ID)</label>
+                <input type="guest_id" name="guest_id" id="inputGuest ID" class="form-control" placeholder="please input original Guest ID" required autofocus><br>
+                <label for="inputEmail">Email</label>
+                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="please input new Email" required autofocus><br>
+                <label for="inputPassword">Password</label>
+                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="please input new Password" required><br>
+                <label for="inputGuest name">Guest name</label>
+                <input type="guest_name" name="guest_name" id="inputGuest name" class="form-control" placeholder="please input new Guest name" required>
+                <div class="checkbox">                
+                </div>              
+                <button type="submit" name="submit" class="btn btn-primary" id="btn-login">Modify</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
